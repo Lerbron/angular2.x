@@ -14,7 +14,8 @@ import { HeadComponent } from './head/head.component';
 
 import { AppRouter } from './app.routers';
 import { HomeDetailComponent } from './home-detail/home-detail.component';
-
+import '../index.js';
+import './../styles.css';
 import { HomeService } from './home/home.service';
 
 @NgModule({

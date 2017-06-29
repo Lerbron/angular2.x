@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./head.component.css']
 })
 export class HeadComponent implements OnInit {
-  @Input() head: string;
+  @Input() head: string;    // 通过@Input() 接收，绑定父组件传递的属性，值
   constructor() { }
 
   ngOnInit() {
