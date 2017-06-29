@@ -1,0 +1,10 @@
+<div>
+  <app-head [head]="head"></app-head>
+  <div (click)="pushTo('homeDetail')">去home详情页</div>
+  <ul>
+    <li *ngFor="let item of list">{{item.className}}</li>
+  </ul>
+  <ul>
+    <li *ngFor="let good of mall">{{good.goodsName}}</li>
+  </ul>
+</div>

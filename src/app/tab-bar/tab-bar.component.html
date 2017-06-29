@@ -1,0 +1,5 @@
+<ul class="tab-bar-container">
+  <li *ngFor="let tab of tabs, let i = index" class="tab-bar">
+    <a class="tab" [ngClass]="{'active': i == idx}" (click)="selectIdx(i, tab)">{{tab}}</a>
+  </li>
+</ul>

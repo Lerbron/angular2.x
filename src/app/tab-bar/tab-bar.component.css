@@ -1,0 +1,1 @@
+.tab-bar-container{  display: flex;  display: -webkit-flex;  position: fixed;  bottom: 0;  width: 100%;}.tab-bar{  flex: 1;  background: #f7f7f7;}.tab{  height: .84rem;  line-height: .84rem;  display: inline-block;  width: 100%;  text-align: center;  color: #333;  font-size: .40rem;}.tab.active{  color: green;}
