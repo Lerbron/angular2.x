@@ -1,3 +1,6 @@
 <div>
   <app-head [head]="head"></app-head>
+  <p>赞成票：{{aproCount}}  反对票：{{agaiCount}} 弃权票：{{abstCount}}</p>
+  <app-more-child [data] = "data" (isApro)="count($event)" ></app-more-child>
+  <!--通过（isApro）监听子组件传递的值,将值传递给函数count（）-->
 </div>

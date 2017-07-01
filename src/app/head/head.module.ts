@@ -1,0 +1,1 @@
+/** * Created by admin on 2017/7/1. */import { NgModule } from '@angular/core';import { HeadComponent } from './head.component';// 当一个相同的布局要在多个模块中使用，必须将该部分作为模块，并导出该组件。使用该模块时分别在使用的模块imports中引入不同的使用模块。@NgModule({  imports: [  ],  exports: [HeadComponent],  declarations: [    HeadComponent  ],  providers: [],})export class HeadModule { }

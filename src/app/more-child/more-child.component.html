@@ -1,0 +1,10 @@
+<div>
+  <ul>
+    <li *ngFor="let obj of data; let i = index">
+      {{obj.name}}  {{obj.age}}
+      <input class="agree" type="radio" name= {{i}} value="approve" #approve (click)="isApprove('approve')"> 赞同
+      <input class="agree" type="radio" name= {{i}} value="against" #against (click)="isApprove('against')"> 不赞同
+      <input class='agree' type="radio" name= {{i}} value="abstention" #abstention (click)="isApprove('abstention')">弃权
+    </li>
+  </ul>
+</div>

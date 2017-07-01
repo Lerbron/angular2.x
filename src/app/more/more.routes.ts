@@ -1,0 +1,1 @@
+/** * Created by admin on 2017/7/1. */import { RouterModule } from '@angular/router';import { MoreComponent } from './more.component';export const moreRoutes = [  {    path: '',    component: MoreComponent  }];

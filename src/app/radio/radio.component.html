@@ -1,0 +1,6 @@
+<div>
+  <input type="radio" name="color" value="green" (click)="changeColor('green')">green
+  <input type="radio" name="color" value="blue" (click)="changeColor('blue')">blue
+  <input type="radio" name="color" value="red" (click)="changeColor('red')">red
+  <p appBgDirective [appMouseOver] = 'colors'> color change </p>
+</div>

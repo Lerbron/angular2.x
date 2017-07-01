@@ -1,0 +1,1 @@
+/** * Created by admin on 2017/7/1. */import { RouterModule } from '@angular/router';import { HomeComponent } from './home.component';// import { HomeDetailComponent } from '../home-detail/home-detail.component';export const homeRoutes = [  {    path: '',    component: HomeComponent,  }];

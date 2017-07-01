@@ -5,28 +5,22 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
+import { HeadModule } from './head/head.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { MineComponent } from './mine/mine.component';
-import { MoreComponent } from './more/more.component';
 import { TabBarComponent } from './tab-bar/tab-bar.component';
-import { HeadComponent } from './head/head.component';
 
 import { AppRouter } from './app.routers';
 import { HomeDetailComponent } from './home-detail/home-detail.component';
-import '../index.js';
+
+
+import './../index.js';
 import './../styles.css';
-import { HomeService } from './home/home.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    MineComponent,
-    MoreComponent,
     TabBarComponent,
-    HeadComponent,
-    HomeDetailComponent
+    HomeDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +28,7 @@ import { HomeService } from './home/home.service';
     HttpModule,
     JsonpModule,
     CommonModule,
+    HeadModule,
     RouterModule.forRoot(AppRouter)
   ],
   providers: [],

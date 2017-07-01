@@ -1,0 +1,1 @@
+/** * Created by admin on 2017/7/1. */import { RouterModule } from '@angular/router';import { MineComponent } from './mine.component';export const mineRoutes = [  {    path: '',    component: MineComponent  }];

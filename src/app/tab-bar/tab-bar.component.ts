@@ -8,13 +8,14 @@ import { Router } from '@angular/router';
 })
 export class TabBarComponent implements OnInit {
   tabs = ['home', 'more', 'mine'];
-  idx = 0;
+  idx = sessionStorage.getItem('selectIdx') || 0;
   constructor( public router: Router) { }
 
   ngOnInit() {
   }
   selectIdx (selectIdx, route) {
     this.idx = selectIdx;
+    sessionStorage.setItem('selectIdx', selectIdx );
     this.router.navigateByUrl(route);
   }
 }

@@ -1,0 +1,1 @@
+/** * Created by admin on 2017/7/1. */import { Component } from '@angular/core';@Component({  selector: 'app-test',  template: `<h1>我是共享的组件</h1>`})export class TestComponent {}
